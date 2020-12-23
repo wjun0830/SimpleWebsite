@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Product Register</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/static/public/css/base.css">
+    <link rel="stylesheet" href="/static/public/css/vendor.css">
+    <link rel="stylesheet" href="/static/public/css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="/static/public/js/modernizr.js"></script>
+    <script src="/static/public/js/pace.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("input[name='chk_books']").click(function () {
+          var value = $(this).val();
+          console.log(value);
+          if (value == 0) {
+              $("#book_dif1").show();
+              $("#book_dep1").show();
+          } else if (value == 1) {
+              $("#book_dif1").hide();
+              $("#book_dep1").hide();
+          }
+        });
+      });
+    </script>
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- pageheader
+    ================================================== -->
+    <div class="s-pageheader">
+
+      <header class="header">
+          <div class="header__content row">
+
+              <div class="header__logo">
+                  <a class="logo" href="/">
+                    <!-- SKKU Flea Market -->
+                      <!-- <img src="/static/public/images/logo.svg" alt="Homepage"> -->
+                      <img src="/static/public/images/icons/skk1.png" alt="Homepage">
+                  </a>
+              </div> <!-- end header__logo -->
+              <ul class="header__social">
+                <% if(who == 'admin'){%>
+                  <li>
+                      <a href="admin_page"><i class="fa fa-user" aria-hidden="true"></i></a>
+                  </li>
+                <% } else if(who =='user'){ %>
+                  <li>
+                    <a href="shoppinglist"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    &nbsp;&nbsp;
+                    <a href="wishlist"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                      <!-- <a href="#0"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a> -->
+                  </li>
+                <% } %>
+              </ul> <!-- end header__social -->
+
+              <% console.log('product_register.ejs') %>
+              <% console.log(id) %>
+              <% if (id != 'none'){ %>
+
+
+                <ul class="header__sign">
+                  <li>
+                      Welcome <%= id %>
+                  </li>
+                  <li><a href="/logout">
+                    <img src="/static/public/images/log-out.png" alt="">
+                  </a></li>
+
+                </ul>
+
+              <% }else{ %>
+
+                <!-- console.log('no id2') -->
+                <ul class="header__sign">
+
+                    <li>
+                        <a href="/static/public/login.html"><i class="sign-in" ></i>Sign In</a>
+                    </li>
+                    <li>
+                        |
+                    </li>
+                    <li>
+                        <a href="/static/public/registration.html"><i class="sign-up" ></i>Sign Up</a>
+                    </li>
+                </ul>
+              <% } %>
+
+              <a class="header__search-trigger" href="#0"></a>
+
+              <div class="header__search">
+
+                  <form role="search" method="post" class="header__search-form" action="search">
+                      <label>
+                          <span class="hide-content">Search for Product name</span>
+                          <input type="search" class="search-field" placeholder="Type Product Name" value="" name="s_pname" title="Search for Product Name:" autocomplete="off" style="color:#ffffff;">
+                          <span class="hide-content">Search for Seller ID</span>
+                          <input type="search" class="search-field" placeholder="Type Seller" value="" name="s_seller" title="Search for Seller" autocomplete="off" style="color:#ffffff;">
+                          <span class="hide-content">Search for Maximumm Price</span>
+                          <input type="search" class="search-field" placeholder="Type Maximum Price" value="" name="s_price" title="Search for Price(type maximum price)" autocomplete="off" style="color:#ffffff;">
+                      </label>
+                      <input type="submit" class="search-submit" value="Search">
+                  </form>
+
+                  <a href="#0" title="Close Search" class="header__overlay-close">Close</a>
+
+              </div>  <!-- end header__search -->
+
+
+              <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+
+              <nav class="header__nav-wrap">
+
+                  <h2 class="header__nav-heading h6">Site Navigation</h2>
+
+                  <ul class="header__nav">
+
+                    <li class="has-children">
+                        <a href="/category?topic=ALL" title="All" name="All">Textbooks</a>
+                        <ul class="sub-menu">
+                        <li><a href="/category?topic=ALL">All Books</a></li>
+                        <li><a href="/category?topic=SWE">Computer/Software</a></li>
+                        <li><a href="/category?topic=ECO">Economics</a></li>
+                        <li><a href="/category?topic=PSY">Psychology</a></li>
+                        <li><a href="/category?topic=BUS">Business</a></li>
+                        <li><a href="/category?topic=EEE">Electronic</a></li>
+                        <li><a href="/category?topic=OTH">Others</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="has-children">
+                        <div class="top-meu"><a href="/category?topic=OtherProducts" title="OtherProducts" name="OtherProducts">Other Products</a></div>
+                          <!-- <ul class="sub-menu">
+                          <li><a href="/static/public/single-video.html">Video Post</a></li>
+                          <li><a href="/static/public/single-audio.html">Audio Post</a></li>
+                          <li><a href="/static/public/single-gallery.html">Gallery Post</a></li>
+                          <li><a href="/static/public/single-standard.html">Standard Post</a></li>
+                          </ul> -->
+                        </li>
+                        <li><a href="/product_register" title="">Product Register</a></li>
+                        <li><a href="/myproduct" title="">My Products</a></li>
+                        <li><a href="/about" title="">About</a></li>
+                        <li><a href="/contact" title="">Contact</a></li>
+                    </ul> <!-- end header__nav -->
+
+                  <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
+
+              </nav> <!-- end header__nav-wrap -->
+
+          </div> <!-- header-content -->
+      </header> <!-- header -->
+
+    </div> <!-- end s-pageheader -->
+
+
+    <!-- s-content
+    ================================================== -->
+    <section class="s-content">
+
+        <div class="row narrow text-center">
+            <div class="col-full s-content__header" data-aos="fade-up">
+
+              <div class="alert-box alert-box--notice hideit">
+                  <p>Please Enter your product name, price and description of your goods in detail.</p>
+                  <p>Product Name within 45characters</p>
+                  <p>Product Description within 200characters</p>
+                  <p>Place Name within 45 characters</p>
+                  <p>If the product is book, Major within 45 characters</p>
+                  <i class="fa fa-times alert-box__close"></i>
+              </div> <!-- end notice -->
+            </div>
+
+
+        <form action="edit_product_process"  method="post" enctype="multipart/form-data">
+            <div class="narrow" name="product_register1">
+
+              <div class="radio_container">
+              	<h2>Product Category</h2>
+                <% if (ptype == 0) { %>
+                <ul class="ul_radio">
+                  <li>
+                    <input type="radio" id="chk_book" name="chk_books" value="0" checked>
+                    <label for="chk_book" checked>Books</label>
+                    <div class="check"></div>
+                  </li>
+                  <li>
+                    <input type="radio" id="chk_other" name="chk_books" value="1">
+                    <label for="chk_other">Others</label>
+                    <div class="check"><div class="inside"></div></div>
+                  </li>
+                </ul>
+                <% }else{ %>
+                  <ul class="ul_radio">
+                    <li>
+                      <input type="radio" id="chk_book" name="chk_books" value="0">
+                      <label for="chk_book" >Books</label>
+                      <div class="check"></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="chk_other" name="chk_books" value="1" checked>
+                      <label for="chk_other" checked>Others</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                  </ul>
+                <% } %>
+              </div>
+              <!-- <input type="radio" name="chk_books" onfocus="this.placeholder = ''" value="book" class="single-input"> Books<p>
+              <input type="radio" name="chk_books" onfocus="this.placeholder = ''" value="book" class="single-input" checked=True> Others -->
+              <input type="hidden" name="pid" placeholder="<%= pid%>" value="<%= pid%>" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Pid'" required="" class="single-input"><br>
+              <input type="text" name="product_name" placeholder="<%= pname%>" value="<%= pname%>" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Product Name'" required="" class="single-input"><br>
+              <input type="number" name="price" placeholder="<%= price%>" value="<%= price%>" min="0" step"100" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Price'"  class="single-input"><br>
+              <input type="text" name="location" placeholder="<%= place%>" value="<%= place%>"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Place to trade'" required="" class="single-input"><br>
+              <input type="file" name="pimg" id="pimg" accept="image/*" class="single-input" value="<%= image%>" placeholder="<%= image%>">
+              <textarea name="contents" cols="40", rows="10" placeholder="<%= description%>" value="<%= description%>" onblur="this.placeholder = 'Product Description'" required="" class="feedback-input"><%= description%></textarea><br>
+              <% if(ptype == 0){%>
+              <div class="select-box select-script" name+"book_dif1" id="book_dif1" style="width:80%;">
+                <select name="book_dif" id="book_dif" title="select_">
+
+                    <option value="1" selected>Books for freshmen/sophomore</option>
+                    <option value="2">Books for junior/senior</option>
+
+                </select>
+              </div>
+              <div class="select-box select-script" name="book_dep1" id="book_dep1" style="width:80%;">
+                <select name="book_dep" id="book_dep" title="select_" >
+                  <option value="SWE">Computer/Software related book</option>
+                  <option value="EEE">Economics related book</option>
+                  <option value="ECO">Psychology related book</option>
+                  <option value="BUS">Business related book</option>
+                  <option value="PSY">Electronic related book</option>
+                  <option value="OTH" label="OTH" selected >etc</option>
+                </select>
+              </div>
+              <% }else{ %>
+                <div class="select-box select-script" name+"book_dif1" id="book_dif1" style="width:80%;" hidden>
+                  <select name="book_dif" id="book_dif" title="select_" >
+
+                      <option value="1" selected>Books for freshmen/sophomore</option>
+                      <option value="2">Books for junior/senior</option>
+
+
+                  </select>
+                </div>
+                <div class="select-box select-script" name="book_dep1" id="book_dep1" style="width:80%;" hidden>
+                  <select name="book_dep" id="book_dep" title="select_" >
+                    <option value="SWE">Computer/Software related book</option>
+                    <option value="EEE">Economics related book</option>
+                    <option value="ECO">Psychology related book</option>
+                    <option value="BUS">Business related book</option>
+                    <option value="PSY">Electronic related book</option>
+                    <option value="OTH" label="OTH" selected >etc</option>
+                  </select>
+                </div>
+
+              <% } %>
+              <!-- <input type="textarea" cols=5 rows=20 name="contents" placeholder="상품 설명"  onfocus="this.placeholder = ''" onblur="this.placeholder = '상품 설명'" required="" class="single-input"><br> -->
+              <select class="nice-select" name="selltype"> <br><br>
+                <option value="0">Sale</option>
+                <option value="1">Auction</option>
+              </select><br><br><br>
+              <input class="btn btn-primary" type="submit" name="" value="register">
+            <!-- </div> -->
+
+        </form>
+</div>
+
+
+        <!-- table_area start -->
+        <div class="whole-wrap">
+          <div class="container box_1170">
+
+        <div class="section-top-border">
+
+      </div>
+
+      </div>
+      </div>
+      <!-- table_area end -->
+
+
+    </section> <!-- s-content -->
+
+
+    <!-- s-extra
+    ================================================== -->
+    <section class="s-extra">
+
+        <div class="row top">
+
+
+
+            <div class="col-four md-six tab-full about">
+              <h3>About SKKU Flea Market</h3>
+
+              <p>
+              We provide platform service for skku students to buy and sell items especially their second-hand items such as textbooks.
+              </p>
+
+                <ul class="about__social">
+                    <li>
+                        <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                    </li>
+                </ul> <!-- end header__social -->
+            </div> <!-- end about -->
+
+        </div> <!-- end row -->
+
+        <div class="row bottom tags-wrap">
+            <div class="col-full tags">
+                <h3>Tags</h3>
+
+                <div class="tagcloud">
+                  <a href="/category?topic=ALL">All Books</a>
+                  <a href="/category?topic=SWE">Computer/Software</a>
+                  <a href="/category?topic=ECO">Economics</a>
+                  <a href="/category?topic=PSY">Psychology</a>
+                  <a href="/category?topic=BUS">Business</a>
+                  <a href="/category?topic=EEE">Electronic</a>
+                  <a href="/category?topic=OTH">Others Books</a>
+                  <a href="/category?topic=OtherProducts" title="OtherProducts" name="OtherProducts">Other Products</a></div>
+
+                </div> <!-- end tagcloud -->
+            </div> <!-- end tags -->
+        </div> <!-- end tags-wrap -->
+
+    </section> <!-- end s-extra -->
+
+
+    <!-- s-footer
+    ================================================== -->
+    <footer class="s-footer">
+
+
+
+        <div class="s-footer__bottom">
+            <div class="row">
+                <div class="col-full">
+                    <div class="go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top"></a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end s-footer__bottom -->
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="/static/public/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/public/js/plugins.js"></script>
+    <script src="/static/public/js/main.js"></script>
+
+</body>
+
+</html>

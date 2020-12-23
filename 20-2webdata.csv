@@ -1,0 +1,379 @@
+pid,price,pname,description,selltype,seller,place,image,major,difficulty,ptype
+0,21000,CPA 객관식 경영학(8판)(전2권),book,0,admin,Samsung library,,BUS,2,0
+1,5000,경영학원론,book,0,admin,Samsung library,,BUS,2,0
+2,4000,경영학원론(2판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+3,15000,AI 2045 인공지능 미래보고서,book,0,admin,Samsung library,,BUS,2,0
+4,6500,도전자의 전략,book,0,admin,Samsung library,,BUS,2,0
+5,8000,디지털과 인간,book,0,admin,Samsung library,,BUS,2,0
+6,10000,마케팅 관리(세계 일류들의)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+7,10000,마케팅(4판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+8,12000,마케팅관리,book,0,admin,Samsung library,,BUS,2,0
+9,12000,마케팅관리(핵심)(5판),book,0,admin,Samsung library,,BUS,2,0
+10,5000,마케팅의 이해(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+11,7000,프레임(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+12,11000,플랫폼 제국의 미래,book,0,admin,Samsung library,,BUS,2,0
+13,10000,플랫폼의 생각법,book,0,admin,Samsung library,,BUS,2,0
+14,10000,현대마케팅론(전면개정판 8판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+15,15000,Kotler의 마케팅 원리(16판),book,0,admin,Samsung library,,BUS,2,0
+16,5000,Principles of Marketing,book,0,admin,Samsung library,,BUS,2,0
+17,5000,Principles of Marketing 15/E: Global Edition,book,0,admin,Samsung library,,BUS,2,0
+18,8000,Marketing Management,book,0,admin,Samsung library,,BUS,2,0
+19,5000,전략적 브랜드관리: 이론과 응용(4판)(4판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+20,25000,현대마케팅론(9판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+21,8000,날개를 준비하라(스티브 잡스처럼 이건희처럼)(세계일류들의 미래창조 비결 1...,book,0,admin,Samsung library,,BUS,2,0
+22,5000,소비자행동(5판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+23,5000,소비자행동(6판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+24,13000,Strategic Brand Management,book,0,admin,Samsung library,,BUS,2,0
+25,9900,날개를 준비하라,book,0,admin,Samsung library,,BUS,2,0
+26,38000,Marketing Channels 7/E:a Management View,book,0,admin,Samsung library,,BUS,2,0
+27,10000,소비자행동(2판),book,0,admin,Samsung library,,BUS,2,0
+28,3000,소비자행동(7판),book,0,admin,Samsung library,,BUS,2,0
+29,12000,"Fundamentals of Corporate Finance, Aisan Global 2 Edition",book,0,admin,Samsung library,,BUS,2,0
+30,5000,"Fundamentals of Corporate Finance, Aisan Global Edition",book,0,admin,Samsung library,,BUS,2,0
+31,20000,Fundamentals of Corprate Finance,book,0,admin,Samsung library,,BUS,2,0
+32,13000,Ross의 재무관리(10판),book,0,admin,Samsung library,,BUS,2,0
+33,15000,Corporate Finance (Asia Global Edition),book,0,admin,Samsung library,,BUS,2,0
+34,19000,기업의 재무관리(Ross의)(11판),book,0,admin,Samsung library,,BUS,2,0
+35,15000,재무관리(Ross의)(12판),book,0,admin,Samsung library,,BUS,2,0
+36,8000,재무관리의 이해(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+37,10000,재무관리의 이해(2판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+38,10000,Corporate Finance 3/E: The Core (Global Edition),book,0,admin,Samsung library,,BUS,2,0
+39,15000,Corporate Finance: The Core,book,0,admin,Samsung library,,BUS,2,0
+40,18000,Principles of Corporate Finance,book,0,admin,Samsung library,,BUS,2,0
+41,5000,기본 재무관리(2판),book,0,admin,Samsung library,,BUS,2,0
+42,4000,현대재무관리(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+43,15000,Essentials of Financial Management,book,0,admin,Samsung library,,BUS,2,0
+44,10000,국제재무(2판),book,0,admin,Samsung library,,BUS,2,0
+45,25000,Fundamentals of Investments,book,0,admin,Samsung library,,BUS,2,0
+46,20000,Essentials of Investments,book,0,admin,Samsung library,,BUS,2,0
+47,18000,기본투자론(Bodie의)(10판),book,0,admin,Samsung library,,BUS,2,0
+48,20000,투자론(10판),book,0,admin,Samsung library,,BUS,2,0
+49,10000,Investment (Asia Global Edition),book,0,admin,Samsung library,,BUS,2,0
+50,20000,Investments,book,0,admin,Samsung library,,BUS,2,0
+51,8000,Investments 7/E (IE),book,0,admin,Samsung library,,BUS,2,0
+52,10000,현대투자론(6판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+53,25000,Financial Institutions Management,book,0,admin,Samsung library,,BUS,2,0
+54,20000,Financial Institutions Management: A Risk Management Approac,book,0,admin,Samsung library,,BUS,2,0
+55,25000,"Financial Institutions Management: A Risk Management Approach,",book,0,admin,Samsung library,,BUS,2,0
+56,5000,Financial Markets and Institutions,book,0,admin,Samsung library,,BUS,2,0
+57,15000,Human Resource Management (Paperback),book,0,admin,Samsung library,,BUS,2,0
+58,10000,마케팅조사(4판)(CD1장포함)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+59,10000,엑셀과 R Commander를 활용한 통계(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+60,5000,통계학개론(4판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+61,10000,통계학 탐구,book,0,admin,Samsung library,,BUS,2,0
+62,13000,생산 공급망관리의 이해(2판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+63,18,생산 공급망관리의 이해(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+64,6000,생산 운영관리의 이해(4판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+65,13000,생산운영관리(11판),book,0,admin,Samsung library,,BUS,2,0
+66,10000,Management Information System,book,0,admin,Samsung library,,BUS,2,0
+67,376060,Management Information Systems,book,0,admin,Samsung library,,BUS,2,0
+68,10000,Management Information Systems : Managing the Digital Firm (Paperback),book,0,admin,Samsung library,,BUS,2,0
+69,20000,"Management information systems, Global Edition",book,0,admin,Samsung library,,BUS,2,0
+70,248400,"Management Information Systems, Student Value Edition &amp; New Mymislab...",book,0,admin,Samsung library,,BUS,2,0
+71,5000,Management Information Systems: Managing the Digital Firm(Global Edition),book,0,admin,Samsung library,,BUS,2,0
+72,10000,경영의사결정(Excel 2013을 활용한)(3판),book,0,admin,Samsung library,,BUS,2,0
+73,6000,경영정보시스템(14판),book,0,admin,Samsung library,,BUS,2,0
+74,5000,경영정보시스템(미래 비즈니스를 위한)(2판),book,0,admin,Samsung library,,BUS,2,0
+75,1000,경영정보시스템의 이해(10판),book,0,admin,Samsung library,,BUS,2,0
+76,15000,경영정보시스템(2판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+77,10000,경영정보시스템(미래 비즈니스를 위한)(3판),book,0,admin,Samsung library,,BUS,2,0
+78,10000,경영정보시스템의 이해(12판),book,0,admin,Samsung library,,BUS,2,0
+79,27000,미래 비즈니스를 위한 경영정보시스템,book,0,admin,Samsung library,,BUS,2,0
+80,5000,글로벌경영(8판),book,0,admin,Samsung library,,BUS,2,0
+81,24000,글로벌경영(개정판 9판),book,0,admin,Samsung library,,BUS,2,0
+82,5000,객관식 세법(2018),book,0,admin,Samsung library,,BUS,2,0
+83,38000,객관식 세법(2020)(객관식),book,0,admin,Samsung library,,BUS,2,0
+84,15000,세법개론 세트(2019)(25판)(전2권),book,0,admin,Samsung library,,BUS,2,0
+85,15000,세법개론(2017)(23판),book,0,admin,Samsung library,,BUS,2,0
+86,12000,세법개론(2018)(24판),book,0,admin,Samsung library,,BUS,2,0
+87,10000,"Organization Behavior And Change, 12/e : Managing Human Resources For...",book,0,admin,Samsung library,,BUS,2,0
+88,7000,Organizational Behavior : Managing People and Organizations (Paperback),book,0,admin,Samsung library,,BUS,2,0
+89,36600,"Outlines &amp; Highlights for Organizational Behavior by Ricky Griffin, ISBN...",book,0,admin,Samsung library,,BUS,2,0
+90,30000,CTE Organizational Behavior,book,0,admin,Samsung library,,BUS,2,0
+91,5000,Organizational Behavior,book,0,admin,Samsung library,,BUS,2,0
+92,13000,Organizational Behavior : Managing People and Organizations,book,0,admin,Samsung library,,BUS,2,0
+93,9000,Principles of Organizational Behavior,book,0,admin,Samsung library,,BUS,2,0
+94,12500,IFRS 중급회계. 1(5판),book,0,admin,Samsung library,,BUS,2,0
+95,7000,IFRS 중급회계(7판),book,0,admin,Samsung library,,BUS,2,0
+96,6000,IFRS 중급회계(상)(4판),book,0,admin,Samsung library,,BUS,2,0
+97,42000,K-IFRS 중급재무회계(11판),book,0,admin,Samsung library,,BUS,2,0
+98,4000,중급 재무회계 해답(K-IFRS)(8판),book,0,admin,Samsung library,,BUS,2,0
+99,5000,중급 재무회계(K-IFRS)(8판),book,0,admin,Samsung library,,BUS,2,0
+100,7000,중급재무회계 연습(K-IFRS)(5판),book,0,admin,Samsung library,,BUS,2,0
+101,5000,중급재무회계 해답(K-IFRS)(10판),book,0,admin,Samsung library,,BUS,2,0
+102,3000,중급재무회계 해답(K-IFRS)(9판),book,0,admin,Samsung library,,BUS,2,0
+103,2000,중급재무회계 해답(K-IFRS)(수정판 8판),book,0,admin,Samsung library,,BUS,2,0
+104,10000,중급재무회계(K-IFRS)(10판),book,0,admin,Samsung library,,BUS,2,0
+105,6000,중급재무회계(K-IFRS)(9판),book,0,admin,Samsung library,,BUS,2,0
+106,5000,중급재무회계(K-IFRS)(수정판 8판),book,0,admin,Samsung library,,BUS,2,0
+107,7000,IFRS 중급 회계(6판),book,0,admin,Samsung library,,BUS,2,0
+108,5000,K-IFRS 중급 재무회계(7판),book,0,admin,Samsung library,,BUS,2,0
+109,10,Principles of Economics,book,0,admin,Samsung library,,ECO,2,0
+110,4000,맨큐의 경제학 연습문제풀이(7판),book,0,admin,Samsung library,,ECO,2,0
+111,5000,맨큐의 경제학 연습문제풀이(8판),book,0,admin,Samsung library,,ECO,2,0
+112,5000,맨큐의 경제학(7판),book,0,admin,Samsung library,,ECO,2,0
+113,20000,맨큐의 경제학(8판),book,0,admin,Samsung library,,ECO,2,0
+114,5000,경제학원론,book,0,admin,Samsung library,,ECO,2,0
+115,5000,경제학원론(5판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+116,5000,맨큐의 경제학(5판),book,0,admin,Samsung library,,ECO,2,0
+117,4000,맨큐의 경제학(6판),book,0,admin,Samsung library,,ECO,2,0
+118,8000,미시경제학(3판),book,0,admin,Samsung library,,ECO,2,0
+119,2000,맨큐의 경제학 연습문제 풀이집(6판),book,0,admin,Samsung library,,ECO,2,0
+120,10,맨큐의 핵심경제학(5판),book,0,admin,Samsung library,,ECO,2,0
+121,3000,경제학원론(4판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+122,9000,미시경제학(6판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+123,43000,Microeconomics 2/E,book,0,admin,Samsung library,,ECO,2,0
+124,12000,경쟁우위 마케팅전략(4판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+125,8000,마케팅전략(경쟁우위)(3판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+126,28000,국제재무(3판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+127,5000,국제물류론 연습,book,0,admin,Samsung library,,BUS,3,0
+128,15000,국제물류의 이해(4판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,3,0
+129,10000,전략경영(글로벌 시대의 경쟁력 강화를 위한)(12판),book,0,admin,Samsung library,,BUS,3,0
+130,20000,TOP을 위한 전략경영 5.0,book,0,admin,Samsung library,,BUS,3,0
+131,12000,21세기 미국의 패권과 지정학,book,0,admin,Samsung library,,BUS,3,0
+132,5000,Organization Theory and Design,book,0,admin,Samsung library,,BUS,3,0
+133,18000,Organizational Theory Design and Change (Paperback),book,0,admin,Samsung library,,BUS,3,0
+134,16000,강자의 조건,book,0,admin,Samsung library,,BUS,3,0
+135,10000,대항해 시대(양장본 HardCover),book,0,admin,Samsung library,,BUS,3,0
+136,5000,조직설계의 기초(3판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,3,0
+137,5000,조직설계의 기초(개정판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,3,0
+138,8000,조직이론과 설계(12판),book,0,admin,Samsung library,,BUS,3,0
+139,20000,e-비즈니스와 e-커머스(2판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,3,0
+140,9000,디지털 시대의 경영,book,0,admin,Samsung library,,BUS,3,0
+141,35000,Introduction to Risk Management and Insurance,book,0,admin,Samsung library,,BUS,3,0
+142,20000,Introduction to Risk Management and Insurance  (International Edition),book,0,admin,Samsung library,,BUS,3,0
+143,18000,리스크와 보험(3판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,3,0
+144,5000,리스크와 보험(개정판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,3,0
+145,12500,보험마케팅(소비자 중심의),book,0,admin,Samsung library,,BUS,3,0
+146,25000,계량경제학. 1(7판),book,0,admin,Samsung library,,ECO,7,0
+147,7000,Finance and the Good Society,book,0,admin,Samsung library,,BUS,3,0
+148,40000,Fundamentals of Futures and Options markets,book,0,admin,Samsung library,,BUS,3,0
+149,8000,Fundamentals of Futures and Options Markets (GE),book,0,admin,Samsung library,,BUS,3,0
+150,15000,Fundamentals of Futures and Options Markets 8/E (International Edition),book,0,admin,Samsung library,,BUS,3,0
+151,17000,새로운 금융시대,book,0,admin,Samsung library,,BUS,3,0
+152,10000,파생상품의 평가와 헷징전략(8판)(CD1장포함),book,0,admin,Samsung library,,BUS,3,0
+153,373720,Fundamentals of Futures and Options Markets,book,0,admin,Samsung library,,BUS,3,0
+154,20000,Corporate Finance,book,0,admin,Samsung library,,BUS,3,0
+155,9000,유통의 이해(3판),book,0,admin,Samsung library,,BUS,3,0
+156,12000,중국마케팅(China Marketing)(전면개정판 5판),book,0,admin,Samsung library,,BUS,3,0
+157,8000,차이나 마케팅(전면개정판 4판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,3,0
+158,5000,China Marketing(중국마케팅)(개정판 3판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,3,0
+159,32000,China Markeitng(중국마케팅),book,0,admin,Samsung library,,BUS,3,0
+160,14000,차이나 마케팅,book,0,admin,Samsung library,,BUS,3,0
+161,5000,경영과학(12판),book,0,admin,Samsung library,,BUS,3,0
+162,3000,회계감사(New ISA)(4판),book,0,admin,Samsung library,,BUS,3,0
+163,37000,Group Dynamics 5/E,book,0,admin,Samsung library,,PSY,3,0
+164,17000,집단역학(5판),book,0,admin,Samsung library,,PSY,3,0
+165,12800,거시 경제의 이해,book,0,admin,Samsung library,,ECO,2,0
+166,5000,경제학(크루그먼의)(3판),book,0,admin,Samsung library,,ECO,2,0
+167,5000,경제학원론(10판),book,0,admin,Samsung library,,ECO,2,0
+168,15000,크루그먼의 경제학(4판),book,0,admin,Samsung library,,ECO,2,0
+169,5000,크루그먼의 경제학입문(3판),book,0,admin,Samsung library,,ECO,2,0
+170,5000,거시경제학(9판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+171,10000,경제학 연습: 거시편(7판),book,0,admin,Samsung library,,ECO,2,0
+172,20000,경제학원론(최신),book,0,admin,Samsung library,,ECO,2,0
+173,28000,트리니티 미시경제학(5판),book,0,admin,Samsung library,,ECO,2,0
+174,35000,객관식 경제학 미시편(3판),book,0,admin,Samsung library,,ECO,2,0
+175,25000,객관식 경제학(거시편)(3판),book,0,admin,Samsung library,,ECO,2,0
+176,20000,객관식 경제학(원샷 123)(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+177,7000,미시경제학 연습문제 해답집,book,0,admin,Samsung library,,ECO,2,0
+178,5000,미시경제학: 수학노트와 연습문제 해답(5판),book,0,admin,Samsung library,,ECO,2,0
+179,5000,미시경제학: 수학노트와 연습문제 해답(6판),book,0,admin,Samsung library,,ECO,2,0
+180,20000,미시경제학(2판),book,0,admin,Samsung library,,ECO,2,0
+181,5000,미시경제학(2판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+182,10000,미시경제학(예제와 함께하는)(2판),book,0,admin,Samsung library,,ECO,2,0
+183,28000,미시경제학연습(4판),book,0,admin,Samsung library,,ECO,2,0
+184,10000,장선구 경제학 필기노트,book,0,admin,Samsung library,,ECO,2,0
+185,12000,현대 경제학(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+186,18000,Intermediate Microeconomics with Calculus,book,0,admin,Samsung library,,ECO,2,0
+187,15000,Intermediate Microeconomics,book,0,admin,Samsung library,,ECO,2,0
+188,151790,Intermediate Microeconomics a Modern Approach Workouts in Intermediate...,book,0,admin,Samsung library,,ECO,2,0
+189,15000,Macroeconomics 5/E: International Edition,book,0,admin,Samsung library,,ECO,2,0
+190,10000,경제학 연습: 미시편(7판),book,0,admin,Samsung library,,ECO,2,0
+191,15000,미시경제학(7판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+192,20000,미시적 경제분석(중판 3판),book,0,admin,Samsung library,,ECO,2,0
+193,10000,Macroeconomics,book,0,admin,Samsung library,,ECO,2,0
+194,10000,거시경제론 연습문제 해설집(12판),book,0,admin,Samsung library,,ECO,2,0
+195,10,거시경제론(10판),book,0,admin,Samsung library,,ECO,2,0
+196,15000,거시경제론(12판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+197,5000,거시경제학 해법(9판),book,0,admin,Samsung library,,ECO,2,0
+198,10000,거시경제학(2판),book,0,admin,Samsung library,,ECO,2,0
+199,5000,정석 거시경제론(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+200,20000,Macroeconomics(Global Edition),book,0,admin,Samsung library,,ECO,2,0
+201,10000,거시경제학(6판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+202,15000,거시경제학(7판),book,0,admin,Samsung library,,ECO,2,0
+203,32000,Macroeconomics 8/E (Paperback),book,0,admin,Samsung library,,ECO,2,0
+204,7000,거시경제학(4판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+205,16000,거시경제학(5판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+206,5000,거시경제학(7판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+207,10000,거시경제학(8판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+208,32000,경제사: 세계화와 세계 경제의 역사(3판),book,0,admin,Samsung library,,ECO,2,0
+209,16000,경제사(2판),book,0,admin,Samsung library,,ECO,2,0
+210,8000,세계화의 풍경들(비주얼 경제사 2),book,0,admin,Samsung library,,ECO,2,0
+211,40000,경제경영통계학(3판),book,0,admin,Samsung library,,ECO,2,0
+212,15000,경제경영통계학(3판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+213,20000,Statistics for Business and Economics,book,0,admin,Samsung library,,ECO,2,0
+214,10000,Statistics for Business and Economics 8 (Paperback),book,0,admin,Samsung library,,ECO,2,0
+215,20000,Microeconomic Analysis,book,0,admin,Samsung library,,ECO,3,0
+216,10000,화폐와 금융(미쉬킨의)(11판),book,0,admin,Samsung library,,ECO,3,0
+217,2000,"Economics of Money, Banking, and Financial Markets",book,0,admin,Samsung library,,ECO,3,0
+218,4000,"The Economics of Money, Banking, and Financial Markets",book,0,admin,Samsung library,,ECO,3,0
+219,8000,화폐와 금융(10판),book,0,admin,Samsung library,,ECO,3,0
+220,6000,재정학(4판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,3,0
+221,10000,재정학(5판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,3,0
+222,17000,재정학과 공공정책(3판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,3,0
+223,24000,재정학과 공공정책(5판)(반양장),book,0,admin,Samsung library,,ECO,3,0
+224,10000,International Economics 11/E,book,0,admin,Samsung library,,ECO,3,0
+225,10000,International Economics theory and policy(GE),book,0,admin,Samsung library,,ECO,3,0
+226,15000,국제경제학(10판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,3,0
+227,14500,국제무역론(3판),book,0,admin,Samsung library,,ECO,3,0
+228,7000,International Economics : Theory and Policy,book,0,admin,Samsung library,,ECO,3,0
+229,74330,The Political Economy of the World Trading System,book,0,admin,Samsung library,,ECO,3,0
+230,8000,국제경제학(9판),book,0,admin,Samsung library,,ECO,3,0
+231,10000,국제무역론(양장본 HardCover),book,0,admin,Samsung library,,ECO,3,0
+232,25000,도시경제학(오설리반의)(7판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,3,0
+233,18000,오설리반의 도시경제학(8판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,3,0
+234,36000,Health Economics[6e],book,0,admin,Samsung library,,ECO,3,0
+235,9000,Microeconomic Theory,book,0,admin,Samsung library,,ECO,4,0
+236,15000,신호와 시스템(개정2판)(2판),book,0,admin,Samsung library,,EEE,2,0
+237,25000,Signals and Systems,book,0,admin,Samsung library,,EEE,2,0
+238,15000,Signals &amp; Systems,book,0,admin,Samsung library,,EEE,2,0
+239,3000,윤성우의 열혈 자료구조,book,0,admin,Samsung library,,SWE,2,0
+240,12000,C로 쓴 자료구조론(2판),book,0,admin,Samsung library,,SWE,2,0
+241,30000,Fundamentals of Data Structures in C,book,0,admin,Samsung library,,SWE,2,0
+242,35000,Introduction to Algorithms(양장본 HardCover),book,0,admin,Samsung library,,SWE,2,0
+243,42000,INTRODUCTION TO ALGORITHMS 2/E,book,0,admin,Samsung library,,SWE,2,0
+244,10000,디스플레이 공학 1(LCD),book,0,admin,Samsung library,,EEE,3,0
+245,10000,디스플레이 공학개론,book,0,admin,Samsung library,,EEE,3,0
+246,5000,마이크로전자회로(6판)(CD1장포함),book,0,admin,Samsung library,,EEE,2,0
+247,7000,마이크로전자회로(7판),book,0,admin,Samsung library,,EEE,2,0
+248,15000,인지 신경과학(3판),book,0,admin,Samsung library,,PSY,3,0
+249,6000,Fundamentals of Logic Design (Paperback),book,0,admin,Samsung library,,SWE,2,0
+250,5000,Fundamentals of Logic Design,book,0,admin,Samsung library,,SWE,2,0
+251,8000,논리설계기초(6판)(CD1장포함),book,0,admin,Samsung library,,SWE,2,0
+252,5000,논리설계기초(7판)(CD1장포함),book,0,admin,Samsung library,,SWE,2,0
+253,8000,소프트웨어 공학(쉽게 배우는)(IT CookBook 192),book,0,admin,Samsung library,,SWE,3,0
+254,20000,Software Engineering,book,0,admin,Samsung library,,SWE,3,0
+255,15000,An Introduction to Programming Using Python,book,0,admin,Samsung library,,SWE,3,0
+256,5000,모두의 파이썬,book,0,admin,Samsung library,,SWE,3,0
+257,5000,문제해결과 알고리즘(컴퓨팅사고력 향상을 위한),book,0,admin,Samsung library,,SWE,3,0
+258,10000,Thought and Knowledge,book,0,admin,Samsung library,,PSY,3,0
+259,10000,Statistical Analysis with Excel for Dummies,book,0,admin,Samsung library,,PSY,2,0
+260,10000,통계학(행동과학을 위한)(9판),book,0,admin,Samsung library,,PSY,2,0
+261,12000,행동과학을 위한 통계학(행동과학을 위한)(7판),book,0,admin,Samsung library,,PSY,2,0
+262,35000,Organizational Psychology,book,0,admin,Samsung library,,PSY,3,0
+263,6000,조직심리학(2판),book,0,admin,Samsung library,,PSY,3,0
+264,8000,조직심리학(3판),book,0,admin,Samsung library,,PSY,3,0
+265,5000,심리학 실험법(7판),book,0,admin,Samsung library,,PSY,3,0
+266,10000,임상심리학(8판),book,0,admin,Samsung library,,PSY,3,0
+267,10000,집단상담의 이론과 실제(8판),book,0,admin,Samsung library,,PSY,3,0
+268,11000,문화심리학(양장본 HardCover),book,0,admin,Samsung library,,PSY,3,0
+269,12000,전자재료물성 및 소자공학(3판)(CD1장포함)(양장본 HardCover),book,0,admin,Samsung library,,EEE,2,0
+270,18000,Principles of Electronic Materials and Devices,book,0,admin,Samsung library,,EEE,2,0
+271,20000,반도체 소자공학,book,0,admin,Samsung library,,EEE,2,0
+272,22000,전자재료물성 및 소자공학(3/E)(CD1장포함),book,0,admin,Samsung library,,EEE,2,0
+273,10000,현대 암호학(4판),book,0,admin,Samsung library,,SWE,3,0
+274,8000,형식언어와 오토마타. 5/E(5판),book,0,admin,Samsung library,,SWE,2,0
+275,10000,운영체제(9판),book,0,admin,Samsung library,,SWE,3,0
+276,20000,Operating System Concepts,book,0,admin,Samsung library,,SWE,3,0
+277,15000,COMPUTER ORGANIZATION AND DESIGN 5/E(컴퓨터 구조 및 설계),book,0,admin,Samsung library,,SWE,3,0
+278,11000,컴퓨터 구조 및 설계(5판),book,0,admin,Samsung library,,SWE,3,0
+279,45000,프로그래밍 언어(새로 보는)(CD1장포함),book,0,admin,Samsung library,,SWE,3,0
+280,221610,Programming Languages,book,0,admin,Samsung library,,SWE,3,0
+281,20000,"Programming Languages, 4/E",book,0,admin,Samsung library,,SWE,3,0
+282,20000,Discrete-Time Signal Processing,book,0,admin,Samsung library,,EEE,3,0
+283,9000,HAYKIN의 통신이론(2판),book,0,admin,Samsung library,,EEE,3,0
+284,27000,통신시스템(5판),book,0,admin,Samsung library,,EEE,3,0
+285,20000,Computer Networking: A Top-Down Approach,book,0,admin,Samsung library,,SWE,3,0
+286,5000,컴퓨터 네트워킹 : 하향식 접근(7판),book,0,admin,Samsung library,,SWE,3,0
+287,10000,HTML5 + CSS3 + JavaScript로 배우는 웹프로그래밍 기초,book,0,admin,Samsung library,,SWE,3,0
+288,5000,건강한 삶을 위한 운동처방기초(6판),book,0,admin,Samsung library,,SPT,3,0
+289,5000,Electric Circuits,book,0,admin,Samsung library,,EEE,2,0
+290,7000,광전자 및 광자공학(2판),book,0,admin,Samsung library,,EEE,3,0
+291,10000,단계별로 배우는 전자회로 실험 : 기본 소자부터 응용 회로까지,book,0,admin,Samsung library,,EEE,2,0
+292,15000,전자기학(수정판),book,0,admin,Samsung library,,EEE,2,0
+293,15000,Elements of Electromagnetics,book,0,admin,Samsung library,,EEE,2,0
+294,5000,전자기학(5판),book,0,admin,Samsung library,,EEE,2,0
+295,5000,전자기학(6판),book,0,admin,Samsung library,,EEE,2,0
+296,20000,Microelectronic Circuits,book,0,admin,Samsung library,,EEE,2,0
+297,40000,CMOS,book,0,admin,Samsung library,,EEE,3,0
+298,65000,"CMOS : CIRCUIT DESIGN, LAYOUT, AND SIMULATION",book,0,admin,Samsung library,,EEE,3,0
+299,25000,Integrated Circuit Design (+ Access Code) (IE),book,0,admin,Samsung library,,EEE,3,0
+300,9000,Fitzgerald and Kingsleys Electric Machinery (Paperback),book,0,admin,Samsung library,,EEE,3,0
+301,2000,전기기기(7판),book,0,admin,Samsung library,,EEE,3,0
+302,10000,전기기기공학(3판),book,0,admin,Samsung library,,EEE,3,0
+303,20000,배전시스템공학(최신)(개정판),book,0,admin,Samsung library,,EEE,3,0
+304,4000,회로이론실험(실습을 통하여 체계적 이해를 돕는)(2판),book,0,admin,Samsung library,,EEE,2,0
+305,5000,언어심리학(5판)(반양장),book,0,admin,Samsung library,,PSY,3,0
+306,22000,객관식 세법(2020)(개정판 9판),book,0,admin,Samsung library,,BUS,3,0
+307,16000,세법 워크북. 1(2020)(개정판 14판),book,0,admin,Samsung library,,BUS,3,0
+308,16000,세법 워크북. 2(2020)(개정판 14판),book,0,admin,Samsung library,,BUS,3,0
+309,10000,세법강의. 1(2019)(31판),book,0,admin,Samsung library,,BUS,3,0
+310,7000,세법개론(2016)(22판),book,0,admin,Samsung library,,BUS,3,0
+311,10000,원가관리회계(6판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+312,5000,원가회계(2판),book,0,admin,Samsung library,,BUS,2,0
+313,5000,원가회계(3판)(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+314,7000,원가회계(양장본 HardCover),book,0,admin,Samsung library,,BUS,2,0
+315,9000,영문 계약서 작성의 키포인트,book,0,admin,Samsung library,,BUS,2,0
+316,6000,전략적 협상(글로벌시대의),book,0,admin,Samsung library,,BUS,2,0
+317,80710,Introduction to Neuromarketing ＆ Consumer Neuroscience,book,0,admin,Samsung library,,BUS,3,0
+318,5000,국가의 역할,book,0,admin,Samsung library,,ECO,3,0
+319,8000,인간의 얼굴을 한 세계화,book,0,admin,Samsung library,,ECO,3,0
+320,15000,주식회사 한국의 구조조정 무엇이 문제인가,book,0,admin,Samsung library,,ECO,3,0
+321,25000,International Financial Management: Pearson New Internationa,book,0,admin,Samsung library,,ECO,3,0
+322,20000,Economics of Money Banking and Financial Markets 9/E,book,0,admin,Samsung library,,ECO,2,0
+323,8000,화폐와 금융시장(3판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+324,8000,화폐와 금융시장(4판),book,0,admin,Samsung library,,ECO,2,0
+325,8000,화폐와 금융시장(5판)(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+326,370430,Economics of Money Banking and Financial Markets The Business School...,book,0,admin,Samsung library,,ECO,2,0
+327,387930,"Economics of Money, Banking and Financial Markets",book,0,admin,Samsung library,,ECO,2,0
+328,15000,The Economics of Money Banking and Financial Markets (Paperback),book,0,admin,Samsung library,,ECO,2,0
+329,388470,"The Economics of Money, Banking and Financial Markets",book,0,admin,Samsung library,,ECO,2,0
+330,12000,POINT 재정학,book,0,admin,Samsung library,,ECO,2,0
+331,27900,객관식 재정학,book,0,admin,Samsung library,,ECO,2,0
+332,20000,객관식 재정학(3판),book,0,admin,Samsung library,,ECO,2,0
+333,5000,신규상품등록,book,0,admin,Samsung library,,ECO,2,0
+334,5000,재정학 연습문제 해설집(이준구 조명환의)(5판),book,0,admin,Samsung library,,ECO,2,0
+335,20000,재정학(객관식)(양장본 HardCover),book,0,admin,Samsung library,,ECO,2,0
+336,5000,재정학(유레카),book,0,admin,Samsung library,,ECO,2,0
+337,30000,무역영어 1급 기본이론+문제(2019)(와우패스)(개정판),book,0,admin,Samsung library,,ECO,2,0
+338,10000,기아와 기적의 기원,book,0,admin,Samsung library,,ECO,3,0
+339,8000,한국경제사,book,0,admin,Samsung library,,ECO,3,0
+340,7000,"한국경제사(1학기, 워크북포함)",book,0,admin,Samsung library,,ECO,3,0
+341,10000,계량경제학. 1(5판),book,0,admin,Samsung library,,ECO,3,0
+342,15000,계량경제학. 5/E(Gujarati의)(5판),book,0,admin,Samsung library,,ECO,3,0
+343,25000,계량경제학(3판),book,0,admin,Samsung library,,ECO,3,0
+344,12500,계량경제학(4판),book,0,admin,Samsung library,,ECO,3,0
+345,20000,Modern Labor Economics,book,0,admin,Samsung library,,ECO,3,0
+346,10000,노동경제학(7판),book,0,admin,Samsung library,,ECO,3,0
+347,10000,현대노동경제학: 이론과공공정책(10판),book,0,admin,Samsung library,,ECO,3,0
+348,25000,Economic Development 12/E,book,0,admin,Samsung library,,ECO,3,0
+349,39000,Environmental and Natural Resources Economics 9/E (Paperback),book,0,admin,Samsung library,,ECO,3,0
+350,39000,Optics,book,0,admin,Samsung library,,EEE,3,0
+351,18000,광학(4판),book,0,admin,Samsung library,,EEE,3,0
+352,15000,광학(5판),book,0,admin,Samsung library,,EEE,3,0
+353,15000,광학(OPTICS)(4판),book,0,admin,Samsung library,,EEE,3,0
+354,12000,Computer Systems,book,0,admin,Samsung library,,SWE,2,0
+355,15000,컴퓨터 시스템(3판),book,0,admin,Samsung library,,SWE,2,0
+356,18000,Data Communications and Networking (Global Edition),book,0,admin,Samsung library,,SWE,3,0
+357,8000,데이터베이스 개론(IT Cookbook 한빛 교재 시리즈 150),book,0,admin,Samsung library,,SWE,3,0
+358,10000,데이터베이스 개론과 실습(오라클로 배우는),book,0,admin,Samsung library,,SWE,3,0
+359,5000,프로그래밍 언어론(IT Coolbook 한빛교재시리즈 87)(양장본 HardCover),book,0,admin,Samsung library,,SWE,3,0
+360,40000,Abnormal Psychology (GE),book,0,admin,Samsung library,,PSY,3,0
+361,10000,현대 이상심리학(2판)(양장본 HardCover),book,0,admin,Samsung library,,PSY,3,0
+362,15000,인지 심리학(4판),book,0,admin,Samsung library,,PSY,2,0
+363,20000,인지심리학,book,0,admin,Samsung library,,PSY,2,0
+364,10000,인지심리학(3판)(양장본 HardCover),book,0,admin,Samsung library,,PSY,2,0
+365,18000,Exploring Social Psychology,book,0,admin,Samsung library,,PSY,2,0
+366,25000,Exploring Social Psychology 6/E (Paperback),book,0,admin,Samsung library,,PSY,2,0
+367,9000,정서심리학,book,0,admin,Samsung library,,PSY,2,0
+368,6000,정서심리학(2판),book,0,admin,Samsung library,,PSY,2,0
+369,23000,인지과학,book,0,admin,Samsung library,,PSY,3,0
+370,18000,인지과학: 학문 간 융합의 원리와 응용(양장본 HardCover),book,0,admin,Samsung library,,PSY,3,0
+371,15000,감각 및 지각심리학(9판)(Paperback),book,0,admin,Samsung library,,PSY,3,0
+372,9000,성격심리학(12판),book,0,admin,Samsung library,,PSY,3,0
+373,12000,Computer Science Illuminated,book,0,admin,Samsung library,,SWE,2,0
+374,15000,Fundamentals of Communication Systems,book,0,admin,Samsung library,,EEE,3,0
+375,37000,Automatic Control Systems (BK+CD),book,0,admin,Samsung library,,EEE,3,0
+376,15000,Kuo의 자동제어(8판),book,0,admin,Samsung library,,EEE,3,0
+377,3000,통계학: 이해와 응용(2판)(양장본 HardCover),book,0,admin,Samsung library,,SPT,3,0

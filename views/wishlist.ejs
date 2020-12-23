@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Category - Philosophy</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/static/public/css/base.css">
+    <link rel="stylesheet" href="/static/public/css/vendor.css">
+    <link rel="stylesheet" href="/static/public/css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="/static/public/js/modernizr.js"></script>
+    <script src="/static/public/js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- pageheader
+    ================================================== -->
+    <div class="s-pageheader">
+
+      <header class="header">
+          <div class="header__content row">
+
+              <div class="header__logo">
+                  <a class="logo" href="/">
+                    <!-- SKKU Flea Market -->
+                      <!-- <img src="/static/public/images/logo.svg" alt="Homepage"> -->
+                      <img src="/static/public/images/icons/skk1.png" alt="Homepage">
+                  </a>
+              </div> <!-- end header__logo -->
+
+              <ul class="header__social">
+                <% if(who == 'admin'){%>
+                  <li>
+                      <a href="admin_page"><i class="fa fa-user" aria-hidden="true"></i></a>
+                  </li>
+                <% } else if(who =='user'){ %>
+                  <li>
+                    <a href="shoppinglist"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    &nbsp;&nbsp;
+                    <a href="wishlist"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                      <!-- <a href="#0"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a> -->
+                  </li>
+                <% } %>
+              </ul> <!-- end header__social -->
+
+
+              <% if (id != 'none'){ %>
+
+
+                <ul class="header__sign">
+                  <li>
+                      Welcome <%= id %>
+                  </li>
+                  <li><a href="/logout">
+                    <img src="/static/public/images/log-out.png" alt="">
+                  </a></li>
+
+                </ul>
+
+              <% }else{ %>
+
+                <!-- console.log('no id2') -->
+                <ul class="header__sign">
+
+                    <li>
+                        <a href="/static/public/login.html"><i class="sign-in" ></i>Sign In</a>
+                    </li>
+                    <li>
+                        |
+                    </li>
+                    <li>
+                        <a href="/static/public/registration.html"><i class="sign-up" ></i>Sign Up</a>
+                    </li>
+                </ul>
+              <% } %>
+
+              <a class="header__search-trigger" href="#0"></a>
+
+              <div class="header__search">
+
+                  <form role="search" method="post" class="header__search-form" action="search">
+                      <label>
+                          <span class="hide-content">Search for Product name</span>
+                          <input type="search" class="search-field" placeholder="Type Product Name" value="" name="s_pname" title="Search for Product Name:" autocomplete="off" style="color:#ffffff;">
+                          <span class="hide-content">Search for Seller ID</span>
+                          <input type="search" class="search-field" placeholder="Type Seller" value="" name="s_seller" title="Search for Seller" autocomplete="off" style="color:#ffffff;">
+                          <span class="hide-content">Search for Maximumm Price</span>
+                          <input type="search" class="search-field" placeholder="Type Maximum Price" value="" name="s_price" title="Search for Price(type maximum price)" autocomplete="off" style="color:#ffffff;">
+                      </label>
+                      <input type="submit" class="search-submit" value="Search">
+                  </form>
+
+                  <a href="#0" title="Close Search" class="header__overlay-close">Close</a>
+
+              </div>  <!-- end header__search -->
+
+
+              <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+
+              <nav class="header__nav-wrap">
+
+                  <h2 class="header__nav-heading h6">Site Navigation</h2>
+
+                  <ul class="header__nav">
+
+                    <li class="has-children">
+                        <a href="/category?topic=ALL" title="All" name="All">Textbooks</a>
+                        <ul class="sub-menu">
+                        <li><a href="/category?topic=ALL">All Books</a></li>
+                        <li><a href="/category?topic=SWE">Computer/Software</a></li>
+                        <li><a href="/category?topic=ECO">Economics</a></li>
+                        <li><a href="/category?topic=PSY">Psychology</a></li>
+                        <li><a href="/category?topic=BUS">Business</a></li>
+                        <li><a href="/category?topic=EEE">Electronic</a></li>
+                        <li><a href="/category?topic=OTH">Others</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="has-children">
+                        <div class="top-meu"><a href="/category?topic=OtherProducts" title="OtherProducts" name="OtherProducts">Other Products</a></div>
+                          <!-- <ul class="sub-menu">
+                          <li><a href="/static/public/single-video.html">Video Post</a></li>
+                          <li><a href="/static/public/single-audio.html">Audio Post</a></li>
+                          <li><a href="/static/public/single-gallery.html">Gallery Post</a></li>
+                          <li><a href="/static/public/single-standard.html">Standard Post</a></li>
+                          </ul> -->
+                        </li>
+                        <li><a href="/product_register" title="">Product Register</a></li>
+                        <li><a href="/myproduct" title="">My Products</a></li>
+                        <li><a href="/about" title="">About</a></li>
+                        <li><a href="/contact" title="">Contact</a></li>
+                    </ul> <!-- end header__nav -->
+
+                  <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
+
+              </nav> <!-- end header__nav-wrap -->
+
+          </div> <!-- header-content -->
+      </header> <!-- header -->
+
+    </div> <!-- end s-pageheader -->
+
+
+    <!-- s-content
+    ================================================== -->
+    <section class="s-content">
+
+        <div class="row narrow">
+            <div class="col-full s-content__header" data-aos="fade-up">
+                <h1><%= id%>'s WishList</h1>
+            </div>
+        </div>
+
+        <!-- table_area start -->
+        <div class="whole-wrap">
+          <div class="container box_1170">
+
+        <div class="section-top-border">
+        <div class="progress-table-wrap">
+          <div class="progress-table">
+
+            <div class="table-head">
+              <div class="serial"></div>
+              <div class="serial">pname</div>
+              <div class="serial">price</div>
+              <div class="serial">place</div>
+              <div class="serial">seller</div>
+              <div class="serial">selltype</div>
+              <div class="serial">status</div>
+            </div>
+            <% for(var i = 0; i < ids.length; i++) { %>
+            <% if(selltype[i] == 0){ selltype[i] = "Sale";}
+                else{ selltype[i] = "Auction"};
+                if(status[i] == 0){ status[i] = "On Progress";}
+                else{ status[i] = "Not On Sale Anymore";} %>
+            <div class="table-row">
+              <!-- <a href="/SingleArticle?Pname=<%=pname[i]%>&seller=<%=seller[i]%>&pid=<%=pid[i]%>"> -->
+              <div class="serial"><a href="/SingleArticle?Pname=<%=pname[i]%>&seller=<%=seller[i]%>&pid=<%=pid[i]%>"><%=i+1%></a></div>
+              <div class="serial"><a href="/SingleArticle?Pname=<%=pname[i]%>&seller=<%=seller[i]%>&pid=<%=pid[i]%>"><%= pname[i]%></a></div>
+              <div class="serial"><a href="/SingleArticle?Pname=<%=pname[i]%>&seller=<%=seller[i]%>&pid=<%=pid[i]%>"><%= price[i]%></a></div>
+              <div class="serial"><a href="/SingleArticle?Pname=<%=pname[i]%>&seller=<%=seller[i]%>&pid=<%=pid[i]%>"><%= place[i]%></a></div>
+              <div class="serial"><a href="/SingleArticle?Pname=<%=pname[i]%>&seller=<%=seller[i]%>&pid=<%=pid[i]%>"><%= seller[i]%></a></div>
+              <div class="serial"><a href="/SingleArticle?Pname=<%=pname[i]%>&seller=<%=seller[i]%>&pid=<%=pid[i]%>"><%= selltype[i]%></a></div>
+              <div class="serial"><a href="/SingleArticle?Pname=<%=pname[i]%>&seller=<%=seller[i]%>&pid=<%=pid[i]%>"><%= status[i]%></a></div>
+
+            </div>
+            <% } %>
+            <!-- <div class="table-row">
+              <div class="serial">01</div>
+              <div class="serial"> <img src="img/elements/f2.jpg" alt="flag">Canada</div>
+              <div class="serial">645032</div>
+              <div class="serial">1</div>
+              <div class="serial">1</div>
+              <div class="serial">1</div>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+
+      </div>
+      </div>
+      <!-- table_area end -->
+
+
+    </section> <!-- s-content -->
+
+
+    <!-- s-extra
+    ================================================== -->
+    <section class="s-extra">
+
+        <div class="row top">
+
+
+
+            <div class="col-four md-six tab-full about">
+              <h3>About SKKU Flea Market</h3>
+
+              <p>
+              We provide platform service for skku students to buy and sell items especially their second-hand items such as textbooks.
+              </p>
+
+                <ul class="about__social">
+                    <li>
+                        <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                    </li>
+                </ul> <!-- end header__social -->
+            </div> <!-- end about -->
+
+        </div> <!-- end row -->
+
+        <div class="row bottom tags-wrap">
+            <div class="col-full tags">
+                <h3>Tags</h3>
+
+                <div class="tagcloud">
+                  <a href="/category?topic=ALL">All Books</a>
+                  <a href="/category?topic=SWE">Computer/Software</a>
+                  <a href="/category?topic=ECO">Economics</a>
+                  <a href="/category?topic=PSY">Psychology</a>
+                  <a href="/category?topic=BUS">Business</a>
+                  <a href="/category?topic=EEE">Electronic</a>
+                  <a href="/category?topic=OTH">Others Books</a>
+                  <a href="/category?topic=OtherProducts" title="OtherProducts" name="OtherProducts">Other Products</a></div>
+
+                </div> <!-- end tagcloud -->
+            </div> <!-- end tags -->
+        </div> <!-- end tags-wrap -->
+
+    </section> <!-- end s-extra -->
+
+
+    <!-- s-footer
+    ================================================== -->
+    <footer class="s-footer">
+
+
+
+        <div class="s-footer__bottom">
+            <div class="row">
+                <div class="col-full">
+                    <div class="go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top"></a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end s-footer__bottom -->
+
+    </footer> <!-- end s-footer -->
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="/static/public/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/public/js/plugins.js"></script>
+    <script src="/static/public/js/main.js"></script>
+
+</body>
+
+</html>

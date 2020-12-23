@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Standard Post Format - Philosophy</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/static/public/css/base.css">
+    <link rel="stylesheet" href="/static/public/css/vendor.css">
+    <link rel="stylesheet" href="/static/public/css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="/static/public/js/modernizr.js"></script>
+    <script src="/static/public/js/pace.min.js"></script>
+    <script>
+      function delete_confirm(product_id){
+        if(confirm("Do you really want to delete this?")){
+          location.href="/delete_product_process?pid="+product_id;
+        }else{
+          // alert(product_id);
+          alert('Delete Canceled.'); location.href='./';
+        }
+      }
+    </script>
+    <script>
+      function existing(){
+          alert('Already in Wishlist');
+      }
+    </script>
+    <script>
+      function bidmessage(){
+          alert('You should bid with higher price');
+      }
+    </script>
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- pageheader
+    ================================================== -->
+    <div class="s-pageheader">
+
+      <header class="header">
+          <div class="header__content row">
+              <div class="header__logo">
+                  <a class="logo" href="/">
+                    <!-- SKKU Flea Market -->
+                      <!-- <img src="/static/public/images/logo.svg" alt="Homepage"> -->
+                      <img src="/static/public/images/icons/skk1.png" alt="Homepage">
+                  </a>
+              </div> <!-- end header__logo -->
+
+              <ul class="header__social">
+                <% if(who == 'admin'){%>
+                  <li>
+                      <a href="admin_page"><i class="fa fa-user" aria-hidden="true"></i></a>
+                  </li>
+                <% } else if(who =='user'){ %>
+                  <li>
+                    <a href="shoppinglist"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    &nbsp;&nbsp;
+                    <a href="wishlist"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                      <!-- <a href="#0"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a> -->
+                  </li>
+                <% } %>
+              </ul> <!-- end header__social -->
+
+
+              <% if (id != 'none'){ %>
+
+
+                <ul class="header__sign">
+                  <li>
+                      Welcome <%= id %>
+                  </li>
+                  <li><a href="/logout">
+                    <img src="/static/public/images/log-out.png" alt="">
+                  </a></li>
+
+                </ul>
+
+              <% }else{ %>
+
+                <!-- console.log('no id2') -->
+                <ul class="header__sign">
+
+                    <li>
+                        <a href="/static/public/login.html"><i class="sign-in" ></i>Sign In</a>
+                    </li>
+                    <li>
+                        |
+                    </li>
+                    <li>
+                        <a href="/static/public/registration.html"><i class="sign-up" ></i>Sign Up</a>
+                    </li>
+                </ul>
+              <% } %>
+
+              <a class="header__search-trigger" href="#0"></a>
+
+              <div class="header__search">
+
+                  <form role="search" method="post" class="header__search-form" action="search">
+                      <label>
+                          <span class="hide-content">Search for Product name</span>
+                          <input type="search" class="search-field" placeholder="Type Product Name" value="" name="s_pname" title="Search for Product Name:" autocomplete="off" style="color:#ffffff;">
+                          <span class="hide-content">Search for Seller ID</span>
+                          <input type="search" class="search-field" placeholder="Type Seller" value="" name="s_seller" title="Search for Seller" autocomplete="off" style="color:#ffffff;">
+                          <span class="hide-content">Search for Maximumm Price</span>
+                          <input type="search" class="search-field" placeholder="Type Maximum Price" value="" name="s_price" title="Search for Price(type maximum price)" autocomplete="off" style="color:#ffffff;">
+                      </label>
+                      <input type="submit" class="search-submit" value="Search">
+                  </form>
+
+                  <a href="#0" title="Close Search" class="header__overlay-close">Close</a>
+
+              </div>  <!-- end header__search -->
+
+
+              <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+
+              <nav class="header__nav-wrap">
+
+                  <h2 class="header__nav-heading h6">Site Navigation</h2>
+
+                  <ul class="header__nav">
+
+                    <li class="has-children">
+                        <a href="/category?topic=ALL" title="All" name="All">Textbooks</a>
+                        <ul class="sub-menu">
+                        <li><a href="/category?topic=ALL">All Books</a></li>
+                        <li><a href="/category?topic=SWE">Computer/Software</a></li>
+                        <li><a href="/category?topic=ECO">Economics</a></li>
+                        <li><a href="/category?topic=PSY">Psychology</a></li>
+                        <li><a href="/category?topic=BUS">Business</a></li>
+                        <li><a href="/category?topic=EEE">Electronic</a></li>
+                        <li><a href="/category?topic=OTH">Others</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="has-children">
+                        <div class="top-meu"><a href="/category?topic=OtherProducts" title="OtherProducts" name="OtherProducts">Other Products</a></div>
+                          <!-- <ul class="sub-menu">
+                          <li><a href="/static/public/single-video.html">Video Post</a></li>
+                          <li><a href="/static/public/single-audio.html">Audio Post</a></li>
+                          <li><a href="/static/public/single-gallery.html">Gallery Post</a></li>
+                          <li><a href="/static/public/single-standard.html">Standard Post</a></li>
+                          </ul> -->
+                        </li>
+                        <li><a href="/product_register" title="">Product Register</a></li>
+                        <li><a href="/myproduct" title="">My Products</a></li>
+                        <li><a href="/about" title="">About</a></li>
+                        <li><a href="/contact" title="">Contact</a></li>
+                    </ul> <!-- end header__nav -->
+
+                  <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
+
+              </nav> <!-- end header__nav-wrap -->
+
+          </div> <!-- header-content -->
+      </header> <!-- header -->
+
+    </div> <!-- end s-pageheader -->
+
+
+    <!-- s-content
+    ================================================== -->
+    <section class="s-content s-content--narrow s-content--no-padding-bottom">
+
+        <article class="row format-standard">
+              <% if (bidhigh == 1) {%>
+                bidmessage();
+                <!-- window.onload = () => alert('You should bid with higher price'); -->
+              <% } %>
+            <div class="s-content__header col-full">
+              <% if (seller == id){ %>
+              <div class="alignright">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <%= wishcount%>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/edit_product?pid=<%=pid%>&price=<%=price%>&pname=<%=pname%>&seller=<%=seller%>&description=<%=description%>&selltype=<%=selltype%>&place=<%=place%>&major=<%=major%>&difficulty=<%=difficulty%> &ptype=<%=ptype%> &image=<%=image%>"><i class="fa fa-edit fa-2x" aria-hidden="true"></i></a>
+                <a href="#0" onclick="delete_confirm(<%=pid%>)"><i class="fa fa-trash fa-2x" aria-hidden="true"></i></a>
+              </div>
+              <% } else { %>
+                <div class="alignright">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                  <%= wishcount%>
+                </div>
+              <% }%>
+                <h1 class="s-content__header-title">
+                    <%= pname%>
+                </h1>
+                <ul class="s-content__header-meta">
+                    <li class="date"><%=month%> <%=day%>, <%=year%></li>
+                    <!-- <li class="date">December 16, 2017</li> -->
+                    <li class="cat2">
+                        On
+                        <% if(selltype == 0){ %><a href="#0">Sale</a>
+                        <% }else{%> <a href="#0">Auction</a><% } %>
+                        <% if(ptype == 0) {%><a href="#0">Book</a>
+                        <% }else{%> <a href="#0">Products</a><% } %>
+                    </li>
+                </ul>
+            </div> <!-- end s-content__header -->
+
+            <div class="s-content__media col-full">
+                <div class="s-content__post-thumb">
+                  <% if(image == null) {%>
+                    <img src="/static/public/images/noimage.png"
+                         sizes="(max-width: 2000px) 100vw, 2000px" alt="" >
+                   <% }else { %>
+                     <img src="<%= image%>" srcset="<%= image%>" alt="">
+                   <% } %>
+                </div>
+            </div> <!-- end s-content__media -->
+
+            <div class="col-full s-content__main">
+
+
+                <p>
+                <!-- ////Description -->
+                <h2>Product Description</h2>
+                <blockquote>
+                  <p><%= description%></p></blockquote>
+
+                <ul>
+                  <% if(major == "OTH") major = "None";
+                    if(difficulty == 1 || difficulty == 2){
+                      difficulty = "For Freshmen / Sophomore";
+                    }else{
+                      difficulty = "For Junior / Senior";
+                    }
+                    %>
+                    <h4><li>Read details for the trade.</h4>
+                        <ul>
+                            <li>Trade Place : <%= place%></li>
+                            <% if(ptype == 0){ %>
+                              <li>Related Major : <%= major %></li>
+                              <li>Book Difficulty : <%= difficulty %></li>
+                            <% } %>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p><h4>Price</h4></p>
+                <% if(selltype == 1){%>
+                  Auction
+                <%}else{%>
+                  Sale
+                <%}%>
+                <% if(price == ''){%>
+                  Price Not Determined. Start Bidding!
+                <%}else{%>
+                  <%= price%> won
+                <%}%>
+
+                <% if(seller != id ){ %>
+                  <% if(selltype == 0){ %>
+                    <form action="buy_process"  method="post">
+                      <div class="s-content__bton">
+                        <input type="hidden" name="pid" placeholder="<%= pid%>" value="<%= pid%>" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Product Name'" required="" class="single-input" hidden=true><br>
+                        <input type="hidden" name="selltype" placeholder="<%= selltype%>" value="<%= selltype%>" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Product Name'" required="" class="single-input" hidden=true><br>
+                        <span>
+                          <input type="submit" name="buy" id="buy" class="form-submit" value="Buy"/>
+                        </span>
+
+                      </div>
+                    </form>
+                  <% }else{ %>
+                    <form action="bid_process"  method="post">
+                      <div class="s-content__bton">
+                        <input type="hidden" name="pid" placeholder="<%= pid%>" value="<%= pid%>" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Product Name'" required="" class="single-input" hidden=true><br>
+                        <input type="hidden" name="selltype" placeholder="<%= selltype%>" value="<%= selltype%>" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Product Name'" required="" class="single-input" hidden=true><br>
+                        <input type="hidden" name="price" placeholder="<%= price%>" value="<%= price%>" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Product Name'" required="" class="single-input" hidden=true><br>
+                        <% if (price == ''){%>
+                        <% price = 0;%>
+                        <%} else {%>
+                        <% price = parseInt(price) + 1;%>
+                        <%}%>
+                        <input type="number" name="aprice"  min="<%= price%>" placeholder="Auction Price"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Auction Price'" required="" class="single-input"><br>
+                        <span>
+                          <input type="submit" name="buy" id="buy" class="form-submit" value="Bid"/>
+                        </span>
+                      </div>
+                    </form>
+                  <% } %>
+
+
+                <!-- <div class="inline-bton"> -->
+                <div class="s-content__bton">
+                  <% if(ifwish == 0){ %>
+                  <form class="inline-form" action="add_wishlist" method="post">
+                    <input type="hidden" name="pid" placeholder="<%= pid%>" value="<%= pid%>" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Product Name'" required="" class="single-input2" hidden=true><br>
+                    <input type="hidden" name="seller" placeholder="<%= seller%>" value="<%= seller%>" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Product Name'" required="" class="single-input2" hidden=true><br>
+                    <input type="hidden" name="pname" placeholder="<%= pname%>" value="<%= pname%>" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Product Name'" required="" class="single-input2" hidden=true><br>
+                    <input type="submit" name="buy" id="buy" class="form-submit" value="Add to Wishlist"/>
+                  </form>
+                  <% } else {%>
+                    <input type="submit" name="buy" id="buy" class="form-submit" onclick="existing();" value="Add to Wishlist"/>
+                  <% } %>
+                  <!-- <form class="inline-form" action="add_shoppinglist" method="post">
+                    <input type="hidden" name="pid" placeholder="<%= pid%>" value="<%= pid%>" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Product Name'" required="" class="single-input2" hidden=true><br>
+                    <input type="submit" name="buy" id="buy" class="form-submit" value="Add to Shoppinglist"/>
+                  </form> -->
+                </div>
+                <% } else { %>
+                  <form class="notinline-form" action="view_auctionlist" method="post">
+                    <input type="hidden" name="pid" placeholder="<%= pid%>" value="<%= pid%>" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Product Name'" required="" class="single-input2" hidden=true><br>
+                    <input type="hidden" name="seller" placeholder="<%= seller%>" value="<%= seller%>" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Product Name'" required="" class="single-input2" hidden=true><br>
+                    <input type="hidden" name="pname" placeholder="<%= pname%>" value="<%= pname%>" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Product Name'" required="" class="single-input2" hidden=true><br>
+                    <% if(selltype == 1){ %>
+                    <p><input type="submit" name="view" id="view" class="form-submit" value="View Auction History"/></p>
+                    <% } %>
+                  </form>
+                  <!-- view history. -->
+
+                <% } %>
+            <!-- </div> -->
+
+                <p class="s-content__tags">
+                    <span>views</span>
+                    <span class="s-content__tag-list">
+                        <a href="#0"><%= viewcount%></a>
+                    </span>
+                </p> <!-- end s-content__tags -->
+
+                <div class="s-content__author">
+
+
+                    <div class="s-content__author-about">
+                      <h5>
+                          Seller Information
+                      </h5>
+                        <h4 class="s-content__author-name">
+                            <a href="#0"><%= seller%></a>
+                        </h4>
+                        <ul>
+                          <% console.log('single article seller')%>
+                            <li>seller_phone : <%=seller_phone%></li>
+                            <li>seller_email : <%=seller_email%></li>
+                            <li>seller_sell history : <%=seller_n_sell%></li>
+                            <li>seller_department : <%=seller_department%></li>
+                            <li>seller_grade : <%=seller_grade%></li>
+
+                        </ul>
+
+                        <ul class="s-content__author-social">
+                           <li><a href="#0">Facebook</a></li>
+                           <li><a href="#0">Twitter</a></li>
+                           <li><a href="#0">GooglePlus</a></li>
+                           <li><a href="#0">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div> <!-- end s-content__main -->
+        </article>
+        <!-- comments
+        ================================================== -->
+
+
+    </section> <!-- s-content -->
+
+
+    <!-- s-extra
+    ================================================== -->
+    <section class="s-extra">
+
+        <div class="row top">
+
+
+
+            <div class="col-four md-six tab-full about">
+              <h3>About SKKU Flea Market</h3>
+
+              <p>
+              We provide platform service for skku students to buy and sell items especially their second-hand items such as textbooks.
+              </p>
+
+                <ul class="about__social">
+                    <li>
+                        <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                    </li>
+                </ul> <!-- end header__social -->
+            </div> <!-- end about -->
+
+        </div> <!-- end row -->
+
+        <div class="row bottom tags-wrap">
+            <div class="col-full tags">
+                <h3>Tags</h3>
+
+                <div class="tagcloud">
+                  <a href="/category?topic=ALL">All Books</a>
+                  <a href="/category?topic=SWE">Computer/Software</a>
+                  <a href="/category?topic=ECO">Economics</a>
+                  <a href="/category?topic=PSY">Psychology</a>
+                  <a href="/category?topic=BUS">Business</a>
+                  <a href="/category?topic=EEE">Electronic</a>
+                  <a href="/category?topic=OTH">Others Books</a>
+                  <a href="/category?topic=OtherProducts" title="OtherProducts" name="OtherProducts">Other Products</a></div>
+
+                </div> <!-- end tagcloud -->
+            </div> <!-- end tags -->
+        </div> <!-- end tags-wrap -->
+
+    </section> <!-- end s-extra -->
+
+
+    <!-- s-footer
+    ================================================== -->
+    <footer class="s-footer">
+
+
+
+        <div class="s-footer__bottom">
+            <div class="row">
+                <div class="col-full">
+                    <div class="go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top"></a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end s-footer__bottom -->
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="/static/public/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/public/js/plugins.js"></script>
+    <script src="/static/public/js/main.js"></script>
+
+</body>
+
+</html>
